@@ -1,214 +1,86 @@
-# FitTrack
-Aplicativo mobile para gerenciamento de treinos, dietas e acompanhamento da evolução física.
-💪 FitTrack
+# 💪 FitTrack
 
-Aplicativo mobile para gerenciamento de treinos, dietas e acompanhamento da evolução física.
+**Seu treino, sua alimentação e sua evolução em um só lugar.**
 
-O FitTrack foi desenvolvido com o objetivo de centralizar informações da rotina fitness em um único aplicativo, permitindo que o usuário organize seus treinos, acompanhe sua alimentação e registre seu progresso ao longo do tempo.
+O **FitTrack** é uma aplicação web responsiva para organizar rotinas de exercícios, acompanhar refeições e registrar a evolução física. Desenvolvida com foco em uma experiência simples no celular e no computador.
 
-⸻
+[**🚀 Acessar o aplicativo**](https://workout-diet-mate.lovable.app) · [**💻 Código-fonte**](https://github.com/glameiras/FitTrack)
 
-📱 Sobre o projeto
+---
 
-O FitTrack permite que o usuário tenha um acompanhamento organizado da sua rotina de exercícios e evolução física.
+## ✨ Funcionalidades
 
-A aplicação possui autenticação de usuários e áreas específicas para:
+| Módulo | O que você pode fazer |
+| --- | --- |
+| 🔐 **Conta** | Cadastro, login e recuperação de senha |
+| 🏠 **Painel** | Visualizar um resumo de treinos, alimentação e metas |
+| 🏋️ **Treinos** | Criar rotinas, cadastrar exercícios, séries, repetições e cargas |
+| 🥗 **Dieta** | Organizar refeições e acompanhar as refeições realizadas |
+| 📈 **Evolução** | Registrar peso, cargas, cardio e acompanhar o histórico |
+| 📸 **Fotos** | Adicionar fotos para comparar a evolução ao longo do tempo |
+| 👤 **Perfil** | Atualizar dados físicos, visualizar IMC e definir uma meta de peso |
 
-* 🏋️ Gerenciamento de treinos
-* 🥗 Organização de dietas
-* 📈 Registro de evolução
-* 📸 Fotos de antes e depois
-* 👤 Perfil do usuário
-* ⚖️ Cálculo de IMC
-* 🎯 Definição de meta de peso
+## 🛠️ Tecnologias
 
-⸻
+- **React 19** e **TypeScript** — interface e tipagem.
+- **TanStack Start** e **TanStack Router** — estrutura da aplicação e rotas.
+- **Tailwind CSS 4** e **Radix UI** — estilos e componentes de interface.
+- **Supabase** — autenticação, banco de dados e armazenamento.
+- **Recharts** — visualização de dados.
+- **Vite** — ferramentas de desenvolvimento.
 
-✨ Funcionalidades
+## 📁 Estrutura do projeto
 
-🔐 Autenticação
-
-* Cadastro de usuário
-* Login
-* Logout
-* Recuperação de senha
-* Dados individuais por usuário
-
-🏋️ Treinos
-
-* Criação de novos treinos
-* Cadastro de exercícios
-* Séries e repetições
-* Registro de carga
-* Observações
-* Marcação de exercícios realizados
-* Histórico de treinos
-
-🥗 Dietas
-
-* Cadastro e visualização da dieta
-* Organização por refeições
-* Horários das refeições
-* Alimentos e quantidades
-* Observações
-* Marcação de refeições realizadas
-
-📊 Evolução
-
-Permite registrar:
-
-* Peso corporal
-* Massa corporal
-* Progressão de cargas
-* Distância do cardio
-* Tempo de cardio
-* Observações
-* Registros por data
-
-📸 Fotos de evolução
-
-* Upload de fotos
-* Registro da data
-* Descrição da foto
-* Organização cronológica
-* Comparação de fotos de antes e depois
-
-👤 Perfil
-
-O usuário pode cadastrar e editar:
-
-* Nome
-* Foto de perfil
-* Peso
-* Altura
-* Data de nascimento
-* Meta de peso
-
-O aplicativo calcula automaticamente o IMC com base no peso e na altura cadastrados.
-
-⸻
-
-🎯 Objetivos
-
-O projeto tem como objetivo facilitar o acompanhamento da rotina fitness, permitindo que o usuário tenha em um único lugar suas informações de treino, alimentação e evolução.
-
-⸻
-
-🛠️ Tecnologias
-
-Atualize esta seção conforme as tecnologias utilizadas no projeto.
-
-* React
-* TypeScript
-* Vite
-* Tailwind CSS
-* Supabase
-* HTML5
-* CSS3
-* JavaScript
-
-⸻
-
-🗂️ Estrutura do projeto
-
+```text
 FitTrack/
-│
+├── public/               # Arquivos públicos
 ├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── services/
-│   ├── hooks/
-│   ├── lib/
-│   └── assets/
-│
-├── public/
-│
+│   ├── components/       # Componentes e interface
+│   ├── hooks/            # Hooks reutilizáveis
+│   ├── integrations/     # Integrações com serviços
+│   ├── lib/              # Utilitários
+│   └── routes/           # Páginas e rotas
+├── supabase/
+│   └── migrations/       # Migrações do banco de dados
+├── .env.example          # Exemplo de configuração
 ├── package.json
-├── README.md
-└── ...
+└── README.md
+```
 
-⸻
+## 🚀 Executar localmente
 
-🚀 Como executar o projeto
+**Pré-requisitos:** Node.js e npm instalados.
 
-1. Clone o repositório
-
-git clone https://github.com/SEU-USUARIO/fittrack.git
-
-2. Entre na pasta
-
-cd fittrack
-
-3. Instale as dependências
-
+```bash
+git clone https://github.com/glameiras/FitTrack.git
+cd FitTrack
 npm install
-
-4. Execute o projeto
-
 npm run dev
+```
 
-O projeto ficará disponível no endereço informado pelo Vite no terminal.
+> **Atenção:** o código completo está inicialmente na branch `integracao-lovable`. Até a integração ser aprovada, use `git switch integracao-lovable` antes de instalar as dependências.
 
-⸻
+Crie um arquivo `.env` local com base no `.env.example` e preencha as configurações necessárias para o Supabase. **Nunca publique senhas, tokens ou chaves secretas.**
 
-🔑 Configuração do ambiente
+### Comandos disponíveis
 
-Caso o projeto utilize variáveis de ambiente, crie um arquivo:
+| Comando | Finalidade |
+| --- | --- |
+| `npm run dev` | Inicia o ambiente de desenvolvimento |
+| `npm run build` | Gera a versão de produção |
+| `npm run preview` | Pré-visualiza o build |
+| `npm run lint` | Executa a análise estática |
 
-.env
+## 🔒 Privacidade
 
-e configure as variáveis necessárias para conexão com o backend/banco de dados.
+O FitTrack lida com informações pessoais e fotos de evolução. O acesso aos dados deve ser protegido por autenticação, políticas de acesso no banco e regras adequadas de armazenamento. Antes de disponibilizar uma instalação própria, revise as configurações do Supabase e as permissões de cada recurso.
 
-Nunca publique chaves privadas, tokens ou credenciais no GitHub.
+O aplicativo é uma ferramenta de organização pessoal e **não substitui acompanhamento médico ou nutricional**.
 
-⸻
+## 👨‍💻 Desenvolvimento
 
-📱 Interface
+Projeto desenvolvido por **Gustavo Lameiras**, com apoio da plataforma [Lovable](https://lovable.dev), como parte do aprendizado e da construção de portfólio em desenvolvimento de software.
 
-O FitTrack foi pensado com abordagem mobile-first, priorizando:
+---
 
-* Interface simples
-* Navegação intuitiva
-* Botões de fácil acesso
-* Cards informativos
-* Design responsivo
-* Experiência otimizada para dispositivos móveis
-
-⸻
-
-🔮 Próximas funcionalidades
-
-Algumas funcionalidades planejadas para futuras versões:
-
-* 🤖 Geração de treinos personalizados com Inteligência Artificial
-* 📊 Gráficos avançados de evolução
-* 👨‍🏫 Integração com personal trainers
-* 🥗 Integração com nutricionistas
-* 🔔 Lembretes de treino e refeições
-* 📅 Calendário de treinos
-* 📈 Métricas avançadas de desempenho
-* 🏆 Metas e conquistas
-
-⸻
-
-⚠️ Aviso
-
-O FitTrack é um projeto de software voltado ao acompanhamento e organização de informações relacionadas à rotina fitness.
-
-As informações apresentadas pelo aplicativo não substituem avaliação, diagnóstico ou acompanhamento realizado por profissionais habilitados.
-
-⸻
-
-👨‍💻 Desenvolvedor
-
-Gustavo Lameiras
-
-Projeto desenvolvido como parte do processo de aprendizado e desenvolvimento na área de tecnologia.
-
-⸻
-
-📄 Licença
-
-Este projeto está em desenvolvimento.
-
-A licença poderá ser definida conforme a evolução e finalidade do projeto.
+**FitTrack — acompanhe sua constância e celebre sua evolução.**
